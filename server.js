@@ -67,7 +67,7 @@ io.on("connection", (socket) => {
     socket.leave();
   });
 });
-const PORT = process.env.PORT || 5000;
-server.listen(PORT, () => {
+
+server.listen(process.env.PORT || 5000, () => {
   console.log(`Listening on port ${PORT}`);
 });
