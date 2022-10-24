@@ -54,10 +54,6 @@ const Editor = ({ socketRef, roomId, onCodeChange }) => {
     return () => {
       socketRef.current.off(ACTIONS.CODE_CHANGE);
     };
-
-    return () => {
-      socketRef.current.off(ACTIONS.CODE_CHANGE);
-    };
   }, [socketRef.current]);
 
   return <textarea id="realtimeEditor"></textarea>;
